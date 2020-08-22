@@ -1,7 +1,25 @@
+/* reglas estan conformadas por:
+•selectores: como identificamos un elementeo HTML
+•declaraciones: todo lo que hacemos con el selector
+•propiedades: cosas que podemos hacer con esos elementos
+•valores: cosas que esperan recibir como variables las propiedades */
+
 body {
     background: silver;
 }
 
+/* selector de etiqueta
+header - section - nav */
 header {
     background: pink;
+    color: red
 }
+
+/* selector descendente
+body header div nav ol li a */
+
+/* Selector de clase
+.nombre_de_la_clase */
+
+/* Selector de id #
+#nombre_de_id */
