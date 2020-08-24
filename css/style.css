@@ -24,9 +24,62 @@ body header div nav ol li a */
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    /*font-style: italic;*/
     background: silver;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Fjalla One', sans-serif;
+}
+
+h1 {
+    color: white;
+    font-size: 40px;
+    line-height: 150%;
+    letter-spacing: -.2px;
+    /* text-transform: uppercase;
+    text-decoration: underline; */
+}
+h1 strong{
+    color: #026fff;
+}
+
+.hero {
+    height: 300px;
+    background-color: #1b2127;
+    background-image: url('../images/hero.jpg');
+    background-size: 500px 300px;
+    background-repeat: no-repeat;
+    background-position-x: right;
+}
+
+.project {
+    border-color: gray;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 5px;
+    /* border-top-left-radius: 30px; */
+    /* border-top: 10px solid red;
+    border-right: 10px solid green;
+    border-bottom: 10px solid green;
+    border-left: 10px solid green; */
+}
+
+.project-details  {
+    width: 50%;
+}
+
+.project-imageContainer {
+    width: 50%;
+}
+
+.header {
+    background-color: #1b2127;
+    color: white;
+}
+
+.header a {
+    color: white;
+    text-decoration: none;
 }
