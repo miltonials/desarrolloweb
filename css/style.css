@@ -159,11 +159,57 @@ ol, ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
 }
 .footer img {
-vertical-align: middle;
+    vertical-align: middle;
 }
 
 .footer a {
     color: white;
+}
+
+.event-imageContainer {
+    margin: 0px;
+}
+.event-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+.event-list-title {
+    margin-left: 20px;
+}
+.event {
+    margin: 10px;
+    width: 480px;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #f4fbff;
+}
+.event img {
+    width: 480px;
+    height: 200px;
+    object-fit: cover;    
+}
+
+.event-detail {
+    text-align: center;
+    margin: 20px;
+    margin-top: -40px;
+    background-color: #fff;
+    margin-top: -40px;
+    position: relative;
+    padding: 20px;
+}
+
+.event-description {
+    text-align: left;
+}
+
+.description-url {
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 5px 20px;
+    text-decoration: none;
+    color: #056fff;
 }
