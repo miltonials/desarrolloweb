@@ -172,7 +172,8 @@ ol, ul {
 }
 
 .footer a {
-    color: white;
+    color: #056fff;
+    text-decoration: none;
 }
 
 .event-imageContainer {
