@@ -1,38 +1,9 @@
-    /* reglas estan conformadas por:
-•selectores: como identificamos un elementeo HTML
-•declaraciones: todo lo que hacemos con el selector
-•propiedades: cosas que podemos hacer con esos elementos
-•valores: cosas que esperan recibir como variables las propiedades
-
-selector de etiqueta
-header - section - nav 
-header {
-    background: pink;
-    color: red
-}
-
-selector descendente
-body header div nav ol li a
-
-Selector de clase
-.nombre_de_la_clase
-
-    Selector de id #
-#nombre_de_id*/
-
-
-
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: normal;
-    /*font-style: italic;*/
 }
 
-.logo {
-    margin-top: 0;
-    
-}
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Fjalla One', sans-serif;
@@ -44,8 +15,6 @@ h1 {
     line-height: 150%;
     letter-spacing: -.2px;
     margin: 0px;
-    /* text-transform: uppercase;
-    text-decoration: underline; */
 }
 h1 strong{
     color: #026fff;
@@ -59,9 +28,7 @@ h2{
     font-size: 24px;
     margin-bottom: 40px;
 }
-.menu {
-    height: inherit;
-}
+
 
 .header {
     height: 70px;
@@ -71,18 +38,24 @@ h2{
     justify-content: space-between;
     align-items: center;
 }
-
-.header ol {
-    display: flex;
+.logo {
+    margin-top: 0;
+    
+}
+.menu {
     height: inherit;
 }
-
 ol, ul { 
     height: inherit;
     margin: 0;
     padding: 0;
     list-style: none;
 }
+.header ol {
+    display: flex;
+    height: inherit;
+}
+
 
 .header a {
     display: flex;
@@ -96,9 +69,6 @@ ol, ul {
 .hero {
     height: 300px;
     background-color: #1f262c;
-    /* background-image: url('../images/hero.jpg');
-    background-size: 500px 300px;
-    background-repeat: no-repeat; */
     background-position-x: right;
     display: flex;
     align-items: center;
@@ -119,11 +89,6 @@ ol, ul {
     border-width: 1px;
     border-style: solid;
     border-radius: 5px;
-    /* border-top-left-radius: 30px; */
-    /* border-top: 10px solid red;
-    border-right: 10px solid green;
-    border-bottom: 10px solid green;
-    border-left: 10px solid green; */
     margin: 10px;
     margin-bottom: 15px;
     padding: 20px;
@@ -154,10 +119,6 @@ ol, ul {
     margin-bottom: 10px;
 
 }
-
-/* .project-imageContainer {
-    width: 50%;
-} */
 
 .footer {
     color: white;
@@ -228,9 +189,6 @@ ol, ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-.social {
-
 }
 
 .social-link {
