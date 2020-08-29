@@ -154,7 +154,7 @@ h2 {
 .contact {
     height: 155px;
     display: flex;
-    background-color: #1f262c;
+    background-color: #323e47;
 }
 
 .form-email button {
@@ -207,7 +207,7 @@ h2 {
 }
 
 .footer {
-    background: #323e47;
+    background: #1f262c;
     color: white;
     display: flex;
 }
