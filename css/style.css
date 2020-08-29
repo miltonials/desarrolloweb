@@ -96,18 +96,22 @@ h2 {
     padding: 20px;
     margin: 10px;
 }
-.project-title {
-    color: black;
-    font-size: 30px;
-}
 .project-details {
     justify-content: space-between;
+}
+.project-title{
+    font-size: 30px;
 }
 .project-course {
     font-family: 'Fjalla One';
 }
 .project-date strong{
     font-family: 'Fjalla One';
+    font-size: initial;
+}
+.project-source strong{
+    font-family: 'Fjalla One';
+    font-size: large;
 }
 
 .events {
