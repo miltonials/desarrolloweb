@@ -106,8 +106,17 @@ h2 {
     flex-wrap: wrap;
 }
 .project-details {
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    width: 50%;
 }
+.project-imageContainer{
+    width: 50%;
+}
+.project-imageContainer img{
+    max-width: 100%;
+    width: 100%;
+}
+
 .project-title{
     font-size: 30px;
 }
@@ -255,9 +264,42 @@ h2 {
     .header .logo {
         text-align: center;
     }
+    .project {
+        display: block;
+    }
+    .project-imageContainer {
+        text-align: center;
+        width: auto;
+    }
+    .project-details {
+        width: auto;
+        font-size: 16px;
+    }
+    .project-title {
+        font-size: 1.5em;
+        margin-bottom: .3em;
+    }
+    .project-source, .project-source strong {
+        font-size: 1em;
+    }
+    .project-course {
+        font-size: .8em;
+    }
+    .project-date, .project-date strong{
+        font-size: 1em;
+    }
+    .project-description {
+        font-size: .8em;
+    }
+    .project-course, .project-date, .project-source {
+        margin: .4em 0;
+    }
 }
 
 @media screen and (max-width: 480px){
+    .project-details {
+        font-size: 12px;
+    }
 }
 @media screen and (max-width: 320px){
     
