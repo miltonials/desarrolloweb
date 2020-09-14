@@ -137,8 +137,8 @@ h2 {
     flex-wrap: wrap;
 }
 .card-event {
-    width: 480px;
-    margin: 10px;
+    width: 48%;
+    margin: 1%;
     border-radius: 20px;
     overflow: hidden;
     background: #f4fbff;
@@ -153,6 +153,7 @@ h2 {
 }
 .event-description {
     text-align: left;
+    margin-bottom: 6%;
 }
 .card-event figure{
     margin: 0;
@@ -293,6 +294,18 @@ h2 {
     }
     .project-course, .project-date, .project-source {
         margin: .4em 0;
+    }
+
+    .card-event {
+        width: auto;
+    }
+    .card-event-image {
+        width: 100%;
+        object-position: 25% 25%;
+    }
+    .card-event-details {
+        margin: -2em .5em .5em;
+        padding: 1em;
     }
 }
 
