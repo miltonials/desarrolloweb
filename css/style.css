@@ -244,7 +244,9 @@ h2 {
 /* DESKTOP FIRST */
 
 @media screen and (max-width: 1024px){
-    
+    .container {
+        padding: 0 1em;
+        
 }
 
 @media screen and (max-width: 767px){
@@ -303,15 +305,30 @@ h2 {
         width: 100%;
         object-position: 25% 25%;
     }
+    
+}
+
+@media screen and (max-width: 552px){
+    .project-details {
+        font-size: 12px;
+    }
     .card-event-details {
         margin: -2em .5em .5em;
         padding: 1em;
     }
-}
+    .contact {
+        height: auto;
+        padding: 1.5em 0;
+        text-align: center;
+        display: block;
+    }
+    .form-email button {
+        margin: 1em auto;
+    }
+    .footer {
+        display: block;
+        text-align: center;
 
-@media screen and (max-width: 480px){
-    .project-details {
-        font-size: 12px;
     }
 }
 @media screen and (max-width: 320px){
