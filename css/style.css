@@ -239,12 +239,47 @@ h2 {
     color: #056fff;
     text-decoration: none;
 }
-
+.flexible {
+    position: relative;
+    padding-top: 56.25%;
+}
+.youtube-video {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
 
 /* DESKTOP FIRST */
 
 @media screen and (max-width: 1024px){
-    
+    .container {
+        padding: 0 .9em;
+    }
+    .hero {
+        height: auto;
+        position: relative;
+        overflow: hidden;
+        padding: 2em;
+    }
+    h1 {
+        font-size: 1.5em;
+        z-index: 2;
+    }
+    .hero img{
+        position: absolute;
+        z-index: 1;
+        bottom: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        filter: opacity(80%) blur(1px);
+    }
+   
 }
 
 @media screen and (max-width: 767px){
@@ -265,6 +300,7 @@ h2 {
     .header .logo {
         text-align: center;
     }
+
     .project {
         display: block;
     }
@@ -290,7 +326,7 @@ h2 {
         font-size: 1em;
     }
     .project-description {
-        font-size: .8em;
+        font-size: 1em;
     }
     .project-course, .project-date, .project-source {
         margin: .4em 0;
@@ -303,17 +339,43 @@ h2 {
         width: 100%;
         object-position: 25% 25%;
     }
+    
+}
+
+@media screen and (max-width: 552px){
+    h1 {
+        font-size: 1.5em;
+    }
+    .project-details {
+        font-size: 12px;
+    }
     .card-event-details {
         margin: -2em .5em .5em;
         padding: 1em;
     }
+    .contact {
+        height: auto;
+        padding: 1.5em 0;
+        text-align: center;
+        display: block;
+    }
+    .form-email button {
+        margin: 1em auto;
+    }
+    .footer {
+        display: block;
+        text-align: center;
+
+    }
 }
 
-@media screen and (max-width: 480px){
-    .project-details {
-        font-size: 12px;
+@media screen and (max-width: 465px){
+    .hero h1 {
+        font-size: 1.5em;    
     }
 }
 @media screen and (max-width: 320px){
-    
+    .hero {
+        padding: 2em 1em;
+    }
 }
