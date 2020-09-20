@@ -1,11 +1,84 @@
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?3gtvqe');
+    src:  url('../fonts/icomoon.eot?3gtvqe#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?3gtvqe') format('truetype'),
+      url('../fonts/icomoon.woff?3gtvqe') format('woff'),
+      url('../fonts/icomoon.svg?3gtvqe#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+    text-decoration: none;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    text-decoration: none;
+    
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-instagram:before {
+    content: "\e901";
+    font-size: 50px;
+    color: white;
+    text-decoration: none;
+  }
+  .icon-twitter:before {
+    content: "\e902";
+    font-size: 50px;
+    color: white;
+    text-decoration: none;
+  }
+  .icon-facebook:before {
+    content: "\e903";
+    font-size: 50px;
+    color: white;
+    text-decoration: none;
+  }
+  .icon-github:before {
+    content: "\e904";
+    font-size: 50px;
+    color: white;
+    text-decoration: none;
+  }
+  .icon-menu:before {
+    content: "\e900";
+    color: white;
+  }
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+}  
+  
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0 0;
+}
+.burger-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(31, 38, 44, 0.48);
+    display: none;
+    line-height: 40px;
+    text-align: center;
+    position: fixed;
+    z-index: 5;
+    margin: 10px 0 0 10px;
+
 }
 .container {
     height: inherit;
@@ -58,7 +131,6 @@ h2 {
     align-items: center;
 }
 .header ol li :hover{
-    border-radius: 15px;
     background: #475764;
     transition: all 0.4s linear;
 }
@@ -199,7 +271,6 @@ h2 {
     border-style: solid;
     padding: 5px 20px 10px 25px;
     background-image: url(https://i.imgur.com/8BPxYXA.png);
-    background-size: 15px 15px;
     background-repeat: no-repeat;
     background-position-y: center;
     background-position-x: 5px;
@@ -211,9 +282,10 @@ h2 {
     height: 50px;
     background-size: 50px;
     margin: 0px 10px;
+    text-decoration: none;
 }
 
-.social-link.twitter {
+/* .social-link.twitter {
     background-image: url('https://i.imgur.com/Jcv9EVk.png');
 }
 .social-link.facebook {
@@ -224,7 +296,7 @@ h2 {
 }
 .social-link.instagram {
     background-image: url('https://i.imgur.com/QYcAR8O.png');
-}
+} */
 
 .footer {
     background: #1f262c;
@@ -283,6 +355,9 @@ h2 {
 }
 
 @media screen and (max-width: 767px){
+    .burger-button {
+        display: block;
+    }
     .header {
         display: block;
         height: auto;
@@ -296,6 +371,27 @@ h2 {
     }
     .header a {
         justify-content: center;
+        height: 40px;
+        font-size: 2em;
+        text-decoration: underline;
+        margin-bottom: .5em;
+    }
+    .menu {
+        position: fixed;
+        background-color: rgba(65, 105, 225, .8);
+        z-index: 3;
+        top: 0;
+        bottom: 0;
+        left: -100vw;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0.5s;
+    }
+    .menu.is-active {
+        left: 0;
     }
     .header .logo {
         text-align: center;
