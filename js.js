@@ -6,9 +6,7 @@ console.log(menu);
 
 ipad.addListener(validation);
 
-if (ipad.matches) {
-    burgerButton.addEventListener('click', hideShow);
-}
+validation(ipad); //Para que funcione el burgerButton si se inicia desde <767px
 
 function validation(event) {
     console.log(event.matches);

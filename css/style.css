@@ -327,7 +327,7 @@ h2 {
 
 /* DESKTOP FIRST */
 
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 1023px){
     .container {
         padding: 0 .9em;
     }
@@ -390,6 +390,9 @@ h2 {
         justify-content: center;
         transition: 0.5s;
     }
+    .portfolio {
+        padding: 20px 0;
+    }
     .menu.is-active {
         left: 0;
     }
@@ -422,7 +425,7 @@ h2 {
         font-size: 1em;
     }
     .project-description {
-        font-size: 1em;
+        font-size: 1.2em;
     }
     .project-course, .project-date, .project-source {
         margin: .4em 0;
@@ -473,5 +476,8 @@ h2 {
 @media screen and (max-width: 320px){
     .hero {
         padding: 2em 1em;
+    }
+    h2 {
+        font-size: 1.2em;
     }
 }
